@@ -172,14 +172,49 @@ a{
     color: var(--accent-yellow);
 }
 
-.static-img{
-    height: 350px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-image: url('../images/image.jpg');
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute; 
+  top: 50%; 
+  transform: translateY(-50%);
+  z-index: 5;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, transform 0.3s;
 }
+
+.carousel-control-prev {
+  left: 15px; 
+}
+
+.carousel-control-next {
+  right: 15px;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-control-prev:focus,
+.carousel-control-next:focus {
+  outline: none;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: brightness(0) invert(1);
+  width: 20px;
+  height: 20px;
+}
+
 
 .contact{
     padding: 80px 20px;
@@ -303,6 +338,21 @@ a{
         grid-gap: 40px;
         grid-template-columns: 1fr 1.3fr;
     }
+
+    .carousel-images {
+        max-height: 600px;
+        overflow: hidden; /* Prevents content from overflowing */
+      }
+      
+      .carousel-images .carousel-inner {
+        max-height: 500px;
+      }
+      
+      .carousel-images .carousel-item img {
+        object-fit: cover; /* Ensures the images are proportionally scaled to cover the container */
+        height: 100%; /* Ensures the image height adjusts to the parent container */
+        width: 100%;
+      }
 
     .contact-info{
         width: 65%;
