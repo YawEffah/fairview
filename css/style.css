@@ -178,7 +178,7 @@ a{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-image: url('../images/image-mobile.jpg');
+    background-image: url('../images/image.jpg');
 }
 
 .contact{
@@ -263,10 +263,6 @@ a{
         background-image: url('../images/hero-back-tablet.jpg');
     }
 
-    .static-img{
-        background-image: url('../images/image-tablet.jpg');
-    }
-
     .achievements-content{
         display: flex;
         gap: 30px;
@@ -300,10 +296,6 @@ a{
 
     .hero-section{
         background-image: url('../images/hero-back-2.jpg');
-    }
-
-    .static-img{
-        background-image: url('../images/image.jpg');
     }
 
     .about-article{
