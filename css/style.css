@@ -257,21 +257,21 @@ a{
     display: none; 
     position: fixed; 
     bottom: 20px; 
-    right: 20px; 
+    right: 47.5%; 
     z-index: 99; 
     border: none; 
     outline: none; 
-    color: white; 
+    color: #eea302; 
     cursor: pointer; 
     padding: 15px; 
-    border-top-right-radius: 50px;
-    border-top-left-radius: 50px;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
     font-size: 20px; 
-    background: #eea302;
+    /* background: #eea302; */
   }
   
   #myBtn:hover {
-    background: var(--accent-yellow);
+    color: var(--accent-green);
     transition: 0.5s ease;;
 }
 
