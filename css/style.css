@@ -153,6 +153,21 @@ a{
     color: var(--accent-yellow);
 }
 
+.service-card .card-body{
+    position: relative;
+}
+
+.service-card .special-tag{
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    top: 10px;
+    font-size: 16px;
+    background: var(--accent-yellow);
+    left: 10px;
+    position: absolute;
+}
+
 .achievements{
     padding: 80px 20px;
     background: var(--accent-green);
