@@ -70,7 +70,7 @@ a{
 
 .hero-content h1{
     color: white;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: bold;
 }
 
@@ -263,6 +263,10 @@ a{
         gap: 30px;
         align-items: center;
         justify-content: space-between;
+    }
+
+    .hero-content h1{
+        font-size: 60px;
     }
 
     .border{
