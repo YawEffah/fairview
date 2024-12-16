@@ -61,7 +61,7 @@ a{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-image: url('../images/hero-back-2.jpg');
+    background-image: url('../images/hero-back-mobile.jpg');
 }
 
 .products-hero-section{
@@ -178,7 +178,7 @@ a{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-image: url('../images/image.jpg');
+    background-image: url('../images/image-mobile.jpg');
 }
 
 .contact{
@@ -258,6 +258,15 @@ a{
 /* Media queries for tablet */
 
 @media (min-width: 768px) {
+
+    .hero-section{
+        background-image: url('../images/hero-back-tablet.jpg');
+    }
+
+    .static-img{
+        background-image: url('../images/image-tablet.jpg');
+    }
+
     .achievements-content{
         display: flex;
         gap: 30px;
@@ -288,6 +297,15 @@ a{
 
 
 @media (min-width: 1200px) {
+
+    .hero-section{
+        background-image: url('../images/hero-back-2.jpg');
+    }
+
+    .static-img{
+        background-image: url('../images/image.jpg');
+    }
+
     .about-article{
         display: grid;
         grid-gap: 40px;
