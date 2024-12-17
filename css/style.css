@@ -308,11 +308,6 @@ a{
 /* Media queries for tablet */
 
 @media (min-width: 768px) {
-
-    .hero-section{
-        background-image: url('../images/hero-back-tablet.jpg');
-    }
-
     .achievements-content{
         display: flex;
         gap: 30px;
